@@ -184,6 +184,10 @@
 				return '<img src="' + element.attr('data-tooltip-image') + '"/>';
 			}
 		});
+		
+		$("a[data-tooltip-image]").click(function(ev) {
+			ev.preventDefault();
+		});
 	});	
 	</script>
   </body>
