@@ -70,14 +70,24 @@
 							but I'll spare the details for brevity.
 						</p>
 
-						<div id="companies-intershop">
-							<h4>Intershop Communications AG</h4>
+						<div id="companies-intershop" itemscope="" itemtype="http://schema.org/Organization">
+							<h4><span itemprop="name">Intershop Communications AG</span></h4>
 							<br />
 							<br />
-							<img class="center-block" src="images/ish_logo.jpg"
+							<img itemprop="logo" class="center-block" src="images/ish_logo.jpg"
 							alt="Intershop Logo" />
 							<br />
 							<br />
+							<div itemprop="location">
+								<span itemscope itemtype="http://schema.org/Place">
+									<span itemprop="geo">
+										<span itemscope itemtype="http://schema.org/GeoCoordinates"> 
+											<span property="latitude" content="50.92887"></span> 
+											<span property="longitude" content="11.58451"></span> 
+										</span>
+									</span> 
+								</span>
+							</div>
 							<table class="table table-striped">
 								<tbody>
 									<tr>
@@ -86,7 +96,7 @@
 									</tr>
 									<tr>
 										<th scope="row">Site:</th>
-										<td><a href="http://www.intershop.de" title="Intershop Site">www.intershop.de</a></td>
+										<td><a itemprop="url" href="http://www.intershop.de" title="Intershop Site">www.intershop.de</a></td>
 									</tr>
 									<tr>
 										<th scope="row">Company summary:</th>
@@ -542,7 +552,7 @@
 		<!-- /container -->
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+		<script src="bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				$('body').scrollspy({
