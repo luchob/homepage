@@ -3,13 +3,18 @@
 	<head>
 
 		<title>Lachezar Balev - Home Page</title>
+		
+		<!-- A look under the hood? :-) Cool, BTW I keep my page on github too! -->
+		
+		<!-- meta tags -->
 		<meta name="description" content="Looking for information about me - Lachezar Balev? Then you are welcome on my home page! CV, personal information and more.">
 		<meta name="author" content="Lachezar Balev">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<link rel="icon" href="images/favicon.ico">
-
+		
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="bootstrap/css/jumbotron-narrow.css">
@@ -17,80 +22,115 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
 	</head>
 
 	<body>
 
 		<div class="container">
-			<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
-				<div class="header">
-					<nav class="navbar navbar-default">
-						<div class="container-fluid">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="index.html">L <small>B</small></a>
-							</div>
+		
+		<header class="navbar navbar-static-top bs-docs-nav" id="top">
+			<div class="header">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
 
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<!-- Toggling the navigation on mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="index.html">L <small>B</small></a>
+						</div>
 
-								<ul class="nav navbar-nav navbar-right">
-									<li class="active">
-										<a id="link_home" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
-									</li>
-									<li>
-										<a id="link_work" href="work.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Work</a>
-									</li>
-									<li>
-										<a id="link_contact" href="contact.html"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Me@Internet</a>
-									</li>
-									<li>
-										<a id="link_about" href="about.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About Me</a>
-									</li>
-								</ul>
-							</div><!-- /.navbar-collapse -->
-						</div><!-- /.container-fluid -->
-					</nav>
-				</div>
-			</header>
+						<!-- Nav links - home, work, contact, about -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active">
+									<a id="link_home" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+								</li>
+								<li>
+									<a id="link_work" href="work.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Work</a>
+								</li>
+								<li>
+									<a id="link_contact" href="contact.html"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Me@Internet</a>
+								</li>
+								<li>
+									<a id="link_about" href="about.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About Me</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</nav>
+			</div>
+		
 			
 			<div class="jumbotron" itemscope itemtype="http://data-vocabulary.org/Person">
-				<h2>Welcome, stranger :-) !</h2>
-				<p class="lead">
-					My name is <span itemprop="name">Lachezar Balev</span> and this is my small virtual home.
-					I'm a <span itemprop="title">software engineer</span> with ~16 years experience in various very cool and a bit less cool IT projects.
-					I'm currently located in 
-  					<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-    						<span itemprop="region">Sofia</span>, 
-    						<span itemprop="country-name">Bulgaria</span></span>.
-					If you are interested to learn more about my persona, skills and interests please start clicking or tapping.
+				<h2>Hi there!</h2>
+				<div class="alert alert-success alert-dismissible fade in" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<strong>Very, very well done!</strong> You've successfully landed on my homepage.
+				</div>
+				
+				<hr/>
+				
+				<!-- The summary card -->
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h2 class="panel-title">Me</h2>
+					</div>
+					<div class="panel-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-12">
+									<img class="center-block img-thumbnail img-responsive img-circle" src="images/lb_thumb.jpg" alt="My face"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<!-- Name -->
+									<h4><span itemprop="name">Lachezar Balev</span></h4>
+									<!-- Work -->
+									<h5><span itemprop="title">Software engineer</span></h5>
+									<!--location -->
+									<h5>
+										<span itemprop="address" itemscope="" itemtype="http://data-vocabulary.org/Address">
+											<span itemprop="region">Sofia</span>, 
+											<span itemprop="country-name">Bulgaria</span>
+											<span class="glyphicon glyphicon-map-marker"></span>
+										</span>
+									</h5>	
+									<!-- passions -->
+									<h6>Passions: my work, motorbikes, plants</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<hr/>
+				
+				<p>
+					That's it. Where to go next? Depends... If you are interested in my humble persona 
+					then you may try to have a quick start with me! :-)
 				</p>
 				<p>
-					<a id="link_learn_more" class="btn btn-lg btn-success" href="work.html">Learn more</a>
+					<a id="link_learn_more" class="btn btn-lg btn-success" href="about.html">Quick start</a>
 				</p>
 			</div>
 
 			<footer class="footer">
 				<p>
-					&copy; L B 2016.
+					Written in my favourite text editor. &copy; L B 2017. 
 				</p>
 			</footer>
 
 		</div>
 		<!-- /container -->
-
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
 	</body>
 </html>
